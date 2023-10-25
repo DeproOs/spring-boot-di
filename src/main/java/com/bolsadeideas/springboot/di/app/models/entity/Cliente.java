@@ -2,8 +2,10 @@ package com.bolsadeideas.springboot.di.app.models.entity;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
+import org.springframework.web.context.annotation.RequestScope;
 
 @Service
+@RequestScope
 public class Cliente {
     @Value("${cliente.nombre}")
     private String nombre;
